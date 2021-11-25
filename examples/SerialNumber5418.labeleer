@@ -1,0 +1,45 @@
+[Paper]
+Name: Avery 5418
+PaperWidth: 4.00 in
+PaperHeight: 6.00 in
+LabelWidth: 0.75 in
+LabelHeight: 0.50 in
+LabelOffsetX: 0.40 in
+LabelOffsetY: 0.50 in
+LabelSpacingX: 0.06 in
+LabelSpacingY: 0.06 in
+LabelCountX: 4
+LabelCountY: 9
+
+[Variable:Value]
+Value: 000000
+AutoIncrement: true
+
+[TextBlock]
+Left: 0.05 in
+Top: 0.05 in
+Width: 0.65 in
+Height: 0.40 in
+Text: Serial Number
+FontName: Bahnschrift
+FontSize: 5 pt
+Alignment: top-center
+
+[TextBlock:2]
+Left: 0.05 in
+Top: 0.05 in
+Width: 0.65 in
+Height: 0.40 in
+Text: $Value
+FontName: Bahnschrift
+FontSize: 7 pt
+Alignment: bottom-center
+
+[BarcodeBlock]
+Left: 0.025 in
+Top: 0.125 in
+Width: 0.70 in
+Height: 0.20 in
+Value: $Value
+Alignment: middle-center
+BarWidth: 0.22
